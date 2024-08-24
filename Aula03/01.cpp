@@ -26,6 +26,7 @@ float recebe_nota_1();
 float recebe_nota_2();
 void calcular_media(CADASTRO *aluno);
 void calcular_media2(CADASTRO aluno);
+void calcular_media3(struct notas *avaliacao);
 
 int main(int argc, char *argv[]){
 
@@ -39,7 +40,8 @@ int main(int argc, char *argv[]){
         vetor_aluno[x].avaliacao.nota_1 = recebe_nota_1();
         vetor_aluno[x].avaliacao.nota_2 = recebe_nota_2();
         // calcular_media(&vetor_aluno[x]);
-        calcular_media2(vetor_aluno[x]);
+        // calcular_media2(vetor_aluno[x]);
+        calcular_media3(&vetor_aluno[x].avaliacao);
     }
 
     for ( x = 0; x<TOTAL; x++) {
@@ -85,4 +87,11 @@ void calcular_media(CADASTRO *aluno) {
 void calcular_media2(CADASTRO aluno) {
     float media = aluno.avaliacao.nota_1 +  aluno.avaliacao.nota_2 ;
     aluno.avaliacao.media = media / 2;
+}
+
+void calcular_media3(struct notas *avaliacao) {
+
+    float media = avaliacao->nota_1 +  avaliacao->nota_2 ;
+    avaliacao->media = media / 2;
+    cout << "Saiu " << avaliacao->media;
 }
