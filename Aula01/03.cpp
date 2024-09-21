@@ -12,7 +12,7 @@ int fatorial(int n) {
 
 int main () {
     int n;
-    cout << "Informe o número que deseja obter o fatorial:" << endl;
+    cout << "Informe o numero que deseja obter o fatorial:" << endl;
     cin >> n;
     cout << "O fatorial de " << n << " eh " << fatorial(n) << endl;
 }
