@@ -30,11 +30,13 @@ int main(int argc, char *argv[]){
     vetor_aluno.nota_1 = recebe_nota_1();
     vetor_aluno.nota_2 = recebe_nota_2();
 
+    cout << "====================================" << endl;
     cout << "Nome = " << vetor_aluno.nome << endl;
     cout << "Disciplina = " << vetor_aluno.disciplina << endl;
     cout << "Nota 1 = " << vetor_aluno.nota_1 << endl;
     cout << "Nota 2 = " << vetor_aluno.nota_2 << endl;
-    cout << "Média Simples = " << (vetor_aluno.nota_1 + vetor_aluno.nota_2) / 2 << endl;
+    cout << "Media Simples = " << (vetor_aluno.nota_1 + vetor_aluno.nota_2) / 2 << endl;
+    cout << "====================================" << endl;
     return 0;
 }
 

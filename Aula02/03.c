@@ -35,11 +35,13 @@ int main(int argc, char *argv[]){
     }
 
     for ( x = 0; x<TOTAL; x++) {
+        cout << "================================================================" << endl;
         cout << "Nome = " << vetor_aluno[x].nome << endl;
         cout << "Disciplina = " << vetor_aluno[x].disciplina << endl;
         cout << "Nota 1 = " << vetor_aluno[x].nota_1 << endl;
         cout << "Nota 2 = " << vetor_aluno[x].nota_2 << endl;
-        cout << "Média Simples = " << (vetor_aluno[x].nota_1 + vetor_aluno[x].nota_2) / 2 << endl;
+        cout << "Media Simples = " << (vetor_aluno[x].nota_1 + vetor_aluno[x].nota_2) / 2 << endl;
+        cout << "================================================================" << endl;
     }
 
     return 0;
